@@ -30,7 +30,7 @@ contract FitnessToken is ERC20 {
 
     Food[] public foods;
 
-    constructor(address _gameContract, address _fitcoinAddress) BEP20("FitCoin", "FIT") {
+    constructor(address _gameContract, address _fitcoinAddress) ERC20("FitCoin", "FIT") {
         gameContract = _gameContract;
         fitcoinAddress = _fitcoinAddress;
         // 初始化食品数据
