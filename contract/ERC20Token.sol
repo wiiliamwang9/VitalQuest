@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.8.2 <0.9.0;
-import "@openzeppelin/contracts/token/BEP20/BEP20.sol";
+pragma solidity ^0.8.4;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract FitnessToken is BEP20 {
+contract FitnessToken is ERC20 {
     address public gameContract;
     address public fitcoinAddress;
     mapping(address => uint256) public points;
